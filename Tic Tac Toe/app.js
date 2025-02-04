@@ -71,6 +71,10 @@ const game=(event)=>{
       turn='0';
     }
     if(total_turn==9){
+      img0.style.height = '70vh';
+      img0.style.width = '25vw';
+      imgX.style.height = '70vh';
+      imgX.style.width = '25vw';
       document.getElementById('winningMessage').innerHTML="Match is Draw";
       board.removeEventListener('click',game);
     }
